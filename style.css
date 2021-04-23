@@ -23,6 +23,7 @@ body{
     width: 50%;
     height: 100%;
     border-radius: 10px 0px 0px 10px;
+    display: none;
 }
 
 .let_img_1 img{
@@ -66,15 +67,6 @@ body{
     bottom: -2px;
 }
 
-/* .hya::before{
-    position: absolute;
-    content: "";
-    height: 100%;
-    width: 100%;
-    background-color: #2b58ac;
-    transform: scaleX(0);
-    transition:transform 0.3s ease;
-} */
 .input input{
     width: 100%;
     height: 100%;
@@ -89,6 +81,17 @@ body{
     text-decoration: underline;
     cursor: pointer;
 }
+
+/* .hya::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #2b58ac;
+    transform: scaleX(0);
+    transition:transform 0.3s ease;
+} */
+
 /* .input input:focus ~ label,
 .input input:valid ~ label{
     transform: translateY(-20px);
@@ -151,4 +154,15 @@ body{
     text-align: center;
     color: #9c9c9c;
     font-size: 15px;
+}
+
+@media ( min-width: 768px ){
+    .let_img_1{
+        /* width: 50%; */
+        display: block;
+    }
+    .let_img_2{
+        width: 50%;
+        height: 100%;
+    }
 }
